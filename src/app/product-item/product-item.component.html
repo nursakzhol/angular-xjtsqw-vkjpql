@@ -15,10 +15,15 @@
     Description : {{ product.description }}
   </p>
 
-  <a href="whatsapp://send?text=" +{{product.link}}>
-    <button>
-      Share
-    </button>
+  <button>
+    Share
+  </button>
+
+  <a href={{product.linkwp}}>
+    <img
+      src="https://avatars.mds.yandex.net/get-zen_doc/1874839/pub_5dd614d58a84b306db254e29_5dd61716992239515030f48e/scale_1200"
+      width="50"
+    />
   </a>
   <app-product-alerts [product]="product" (notify)="onNotify()">
   </app-product-alerts>
