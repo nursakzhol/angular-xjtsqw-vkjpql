@@ -1,0 +1,32 @@
+<h2>Bags</h2>
+
+<div *ngFor="let product of products">
+	<h3 *ngIf="product.category == 3">
+		<a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+			<img src="{{product.image}}" />
+      {{ product.name }}
+    </a>
+
+			<p *ngIf="product.description">
+				Description : {{ product.description }}
+			</p>
+
+
+
+			<button>
+    Share
+  </button>
+
+			<a href={{product.linkwp}}>
+				<img
+      src="https://avatars.mds.yandex.net/get-zen_doc/1874839/pub_5dd614d58a84b306db254e29_5dd61716992239515030f48e/scale_1200"
+      width="50"
+    />
+  </a>
+	</h3>
+
+
+
+
+
+</div>

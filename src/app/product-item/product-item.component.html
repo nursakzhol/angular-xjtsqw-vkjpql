@@ -1,5 +1,30 @@
 <h2>Products</h2>
 
+<a
+      [routerLink]="['/batteries']"
+    >
+<h2>Batteries</h2>
+</a>
+
+<a
+      [routerLink]="['/chair']"
+    >
+<h2>Chair</h2>
+</a>
+
+<a
+      [routerLink]="['/bags']"
+    >
+<h2>Bags</h2>
+</a>
+
+<a
+      [routerLink]="['/charger']"
+    >
+<h2>Chargers</h2>
+</a>
+
+
 <div *ngFor="let product of products">
   <h3>
     <a
@@ -15,7 +40,10 @@
     Description : {{ product.description }}
   </p>
 
-  <button>
+  <p> 
+    Likes: {{ product.like }}
+  </p>
+  <button cli>
     Share
   </button>
 
